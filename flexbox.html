@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{border: 1px solid black;}
-        .container{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+       #box-div-4{position: relative; left: 50px; top: -30px;} /*Muda só o div 4*/
 
-            justify-content: space-between;
-        }
+       .container{display: flex; 
+        height: 100vh; 
+        flex-direction: row; 
+        justify-content: space-around; 
+        align-items: center;} /*organiza os elementos do container*/
+
+        .box{background-color: cadetblue;
+        border: 1px solid blue;
+        flex-grow: 1;}
+
+        .box:hover{flex-grow: 5;
+        transition: all 3s;} /*ao passar o mouse sobre o grow aumenta*/
+        #box-divi-1{order: -6;}
+        #box-div-3{order: -4;}
+        #box-div-5{order: -5;}
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="box">1</div>
-        <div class="box">2</div>
-        <div class="box">3</div>
-        <div class="box">4</div>
-        <div class="box">5</div>
-        <div class="box">6</div>
-        <div class="box">7</div>
-        <div class="box">8</div>
-        <div class="box">9</div>
-        <div class="box">10</div>
+        <div class="box" id="box-div-1">1</div>
+        <div class="box" id="box-div-2">2</div>
+        <div class="box" id="box-div-3">3</div>
+        <div class="box" id="box-div-4">4</div>
+        <div class="box" id="box-div-5">5</div>
+    </div>
+    <div class="container">
+        <span class="box" id="box-span-1">1</span>
+        <span class="box" id="box-span-2">2</span>
+        <span class="box" id="box-span-3">3</span>
+        <span class="box" id="box-span-4">4</span>
+        <span class="box" id="box-span-5">5</span>
     </div>
 </body>
 </html>

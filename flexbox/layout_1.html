@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout lista de flexbox</title>
+    <style>
+        html{border: 3px solid purple;
+        border-radius: 8px;
+        height: 938px;
+        width: 70vh;
+        justify-content: center;
+        align-items: center;}
+        
+        .container {
+        display: flex;
+        align-items: center;
+        height: 60vh;
+        flex-direction: column;
+        background: #fff;
+        padding: 20px;}
+
+        .logo {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;}
+
+        .linhas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px; /*espaçamento entre as linhas*/
+        width: 100%;
+        margin-bottom: 30px;}
+
+        .linha {
+        height: 15px;
+        background-color: #ccc;
+        border-radius: 4px;}
+
+        .inferior {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        height: 60vh;
+        justify-content: flex-end;}
+
+        .circulo {
+        width: 80px;
+        height: 80px;
+        background-color: #ccc;
+        border-radius: 50%;}
+
+        .nome {
+        width: 120px;
+        height: 15px;
+        background-color: #ccc;
+        border-radius: 4px;}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Company Logo</div>
+
+        <div class="linhas">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+
+        <div class="inferior">
+            <div class="circulo"></div>
+            <div class="nome"></div>
+        </div>
+    </div>
+</body>
+</html>
